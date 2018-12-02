@@ -84,36 +84,36 @@ class App extends Component {
     return (
       <React.Fragment>
         <section>
-          <header class="title">{
+          <header className="title">{
             this.state.loading?
-              <div class="lds-dual-ring_div_name">
-                <div class="lds-dual-ring"></div>
+              <div className="lds-dual-ring_div_name">
+                <div className="lds-dual-ring"></div>
               </div>
               :
               <h1>{this.state.planet.name}</h1>  
               }
           </header>
-          <div class="title__backgroundImage"/>
+          <div className="title__backgroundImage"/>
         </section>
-        <div class="search">
-          <div class="search__text">
+        <div className="search">
+          <div className="search__text">
             <input  type="text" value={this.state.searchPlanet} onChange={this.searchPlanet} placeholder="Enter the number of the planet you want"/>
           </div>
-        <div class="search__button">
+        <div className="search__button">
           <Button  button={this.searchPlanetButton} type="button" />
           </div>
         </div>
-        <section class="data-contents">
+        <section className="data-contents">
             {this.state.loading? 
             
           
-            <div class="lds-dual-ring_div_data">
-            <div class="lds-dual-ring"></div>
+            <div className="lds-dual-ring_div_data">
+            <div className="lds-dual-ring"></div>
             </div>:
             <React.Fragment>
             <DataContent planet={this.state.planet} nextButton={this.nextButton} nextPlanet={this.state.nextPlanet}/>
-            <div class="data-contents__nextprevPlanet">
-            <div class="next">
+            <div className="data-contents__nextprevPlanet">
+            <div className="next">
             <Button  button={this.nextButton} nextPlanet={this.state.planet.films.length} type="button"/>
             <p>Current planet number <span class="planetNumber
             ">{this.state.nextPlanet}</span></p>
@@ -121,7 +121,7 @@ class App extends Component {
             </div>
             </React.Fragment>}
           </section>
-          <div class="end">
+          <div className="end">
           <h1 >“Do. Or do not. There is no try.”</h1>
             <p>Yoda</p>
             </div>
