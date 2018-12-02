@@ -1,0 +1,80 @@
+.search
+    display: flex
+    justify-content: center
+    margin: 0 auto
+
+.search__text input, .search__button input
+    
+    height: 30px
+    border-radius: 5px
+    border: 1px solid #ccc
+
+.search__text input
+    margin-top: 64px
+    width: 250px    
+
+.search__button input
+    margin-top: 16px
+    cursor: pointer
+    width: 200px
+    height: 150px
+    background-image: url(../img/search.png)
+    background-size: 100px
+    background-repeat: no-repeat
+    background-color: white
+    border: none
+
+.planetNumber
+    color: #75b31f
+    font-size: 2em
+
+.lds-dual-ring_div_data
+    padding-top: 64px
+    padding-bottom: 64px
+    width: 30%
+    margin: 0 auto
+
+.lds-dual-ring_div_name
+    padding-top: 20%
+    padding-bottom: 64px
+    width: 10%  
+    margin: 0 auto
+
+.lds-dual-ring 
+    display: inline-block
+    width: 64px
+    height: 64px
+
+.end 
+    font-family: Starjedi
+    width: 100%
+    font-size: 1.5em
+    padding-bottom: 64px
+    background-color: #75b31f
+    text-align: center
+
+.end p
+    margin-top: 8px
+    text-align: center
+    font-size: 0.7em
+    
+    
+    
+
+.lds-dual-ring:after 
+    content: " "
+    display: block
+    width: 46px
+    height: 46px
+    margin: 1px
+    border-radius: 50%
+    border: 5px solid red
+    border-color: red transparent red transparent
+    animation: lds-dual-ring 1.2s linear infinite
+
+@keyframes lds-dual-ring 
+    0% 
+        transform: rotate(0deg)
+
+    100% 
+        transform: rotate(360deg)
