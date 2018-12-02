@@ -1,7 +1,6 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var watch = require('gulp-watch');
-const minify = require('gulp-minify');
 
 //task para o sass
 gulp.task('sass', function () {
@@ -17,11 +16,3 @@ gulp.task('watch', function () {
 
 //task default gulp
 gulp.task('default', ['sass', 'watch']);
- 
-gulp.task('compact', function() {
-  gulp.src('js/**/*.js')
-    .pipe(minify())
-    .pipe(gulp.dest('js'))
-});
-
-
