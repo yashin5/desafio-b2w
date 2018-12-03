@@ -31,10 +31,9 @@ class App extends Component {
   
   componentDidMount(){
     let next = parseInt(Math.random() * (61 - 1) +1);
-    this.setState({loading:true}, ()=>{
     this.setState({nextPlanet: next});
     this.nextFunction(next);
-    });
+    
   };
 
   nextButton = () => {
@@ -122,7 +121,7 @@ class App extends Component {
             </React.Fragment>}
           </section>
           <div className="end">
-          <h1 >“Do. Or do not. There is no try.”</h1>
+          <h1 >“do. or do not. there is no try.”</h1>
             <p>Yoda</p>
             </div>
       </React.Fragment>
