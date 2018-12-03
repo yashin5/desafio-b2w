@@ -30,10 +30,6 @@ To run this project locally you need to have NodeJS and NPM installed in your ma
 3.Install the dependencies:
     
     npm install
-
-*OBS*: 
-
-    If you use Linux, you should also use apt install gulp
     
 4.Enter in *src* folder:
     
@@ -41,7 +37,7 @@ To run this project locally you need to have NodeJS and NPM installed in your ma
 
 5.Run the gulp script:
      
-     gulp sass
+    npm run build:sass
 
 6.Serve the project:
     
