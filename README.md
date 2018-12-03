@@ -30,14 +30,14 @@ To run this project locally you need to have NodeJS and NPM installed in your ma
 3.Install the dependencies:
     
     npm install
+
+*OBS*: 
+
+    If you use Linux, you should also use apt install gulp
     
 4.Enter in *src* folder:
     
     cd desafio-b2w/src
-    
-*OBS*: 
-
-    If you use Linux, use apt install gulp
 
 5.Run the gulp script:
      
