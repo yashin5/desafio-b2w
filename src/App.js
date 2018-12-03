@@ -114,7 +114,7 @@ class App extends Component {
             <div className="data-contents__nextprevPlanet">
             <div className="next">
             <Button  button={this.nextButton} nextPlanet={this.state.planet.films.length} type="button"/>
-            <p>Current planet number <span class="planetNumber
+            <p>Current planet number <span className="planetNumber
             ">{this.state.nextPlanet}</span></p>
             </div>
             </div>
